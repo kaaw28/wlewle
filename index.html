@@ -9,16 +9,46 @@
     <title>Flowers</title>
 </head>
 <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        <template id="my-template">
+  <swal-title>
+    Save changes to "Untitled 1" before closing?
+  </swal-title>
+  <swal-icon type="warning" color="red"></swal-icon>
+  <swal-button type="confirm">
+    Save As
+  </swal-button>
+  <swal-button type="cancel">
+    Cancel
+  </swal-button>
+  <swal-button type="deny">
+    Close without Saving
+  </swal-button>
+  <swal-param name="allowEscapeKey" value="false" />
+  <swal-param
+    name="customClass"
+    value='{ "popup": "my-popup" }' />
+  <swal-function-param
+    name="didOpen"
+    value="popup => console.log(popup)" />
+</template>
+
+    </script>
+
     <div class="greetings">
     <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
-        <span>K</span>
-        <span>A</span>
         <span>M</span>
-        <span>U</span>
+        <span>A</span>
+        <span>K</span>
+        <span>C</span>
+        <span>I</span>
+        <span>K</span>
     </div>
   
     <div class="description">
-        <span>Aku ada hadiah spesial buat kamu!</span>
+        <span>karena aku jauh dan mahal kalo kesana aku kasih online ya makcik!</span>
     </div>
     <div class="button">
         <button>
